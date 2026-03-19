@@ -27,10 +27,11 @@ export const Navigation = () => {
         animate={{ y: scrolled ? 0 : -100 }}
         className="fixed top-0 left-0 w-full z-50 px-6 lg:px-12 py-6 flex justify-between items-center mix-blend-difference"
       >
-        <a href="#" className="font-display text-2xl uppercase tracking-tighter">Lumina</a>
+        <a href="#" className="font-display text-2xl uppercase tracking-tighter">Maisse</a>
         <button 
           onClick={() => setIsOpen(true)}
-          className="p-2 hover:opacity-70 transition-opacity"
+          className="p-3 hover:opacity-70 transition-opacity min-w-[44px] min-h-[44px] flex items-center justify-center"
+          aria-label="Abrir menú de navegación"
         >
           <Menu size={24} />
         </button>
@@ -46,7 +47,8 @@ export const Navigation = () => {
           >
             <button 
               onClick={() => setIsOpen(false)}
-              className="absolute top-8 right-8 lg:top-12 lg:right-12 p-2 hover:rotate-90 transition-transform duration-300"
+              className="absolute top-8 right-8 lg:top-12 lg:right-12 p-3 hover:rotate-90 transition-transform duration-300 min-w-[44px] min-h-[44px] flex items-center justify-center"
+              aria-label="Cerrar menú de navegación"
             >
               <X size={32} />
             </button>

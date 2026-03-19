@@ -15,6 +15,8 @@ export const Author = () => {
             <img 
               src="https://picsum.photos/seed/photographer/1000/1333" 
               alt="The Author"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
             />
@@ -31,7 +33,7 @@ export const Author = () => {
           <h2 className="font-display text-7xl uppercase tracking-tighter">La Visionaria</h2>
           <div className="space-y-6 text-lg text-white/70 font-light leading-relaxed">
             <p>
-              Nacida en la intersección de la luz y la sombra, Lumina ha pasado más de dos décadas 
+              Nacida en la intersección de la luz y la sombra, Maisse ha pasado más de dos décadas 
               documentando los hilos invisibles que conectan a la humanidad con su entorno.
             </p>
             <p>
